@@ -1,0 +1,5 @@
+{
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm --filter @workspace/api-zod run build && pnpm --filter @workspace/db run build && pnpm --filter @workspace/api-server run build",
+  "framework": null
+}

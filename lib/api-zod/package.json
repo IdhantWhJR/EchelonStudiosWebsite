@@ -9,7 +9,13 @@
       "default": "./src/index.ts"
     }
   },
+  "scripts": {
+    "build": "node ./build.mjs"
+  },
   "dependencies": {
     "zod": "catalog:"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.3"
   }
 }
