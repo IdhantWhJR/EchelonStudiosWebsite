@@ -138,10 +138,6 @@
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: hsl(var(--primary)); }
 
-/* Cursor */
-* { cursor: none !important; }
-a, button, [role="button"] { cursor: none !important; }
-
 /* Scroll progress bar */
 .scroll-progress {
   position: fixed;

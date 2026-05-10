@@ -7,8 +7,6 @@ import { FloatingThemeToggle } from "@/components/ThemeToggle";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import UnitedFC from "@/pages/UnitedFC";
-import CustomCursor from "@/components/CustomCursor";
-
 const queryClient = new QueryClient();
 
 function Router() {
@@ -31,7 +29,6 @@ function App() {
           </WouterRouter>
           <FloatingThemeToggle />
           <Toaster />
-          <CustomCursor />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
