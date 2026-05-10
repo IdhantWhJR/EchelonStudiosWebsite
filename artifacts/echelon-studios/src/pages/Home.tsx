@@ -357,8 +357,6 @@ export default function Home() {
 
   return (
     <>
-      <ScrollProgressBar />
-
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground">
 
         {/* Navigation */}
@@ -549,9 +547,8 @@ export default function Home() {
         {/* Stats Bar */}
         <section className="py-16 border-b border-border bg-card">
           <div className="container mx-auto px-6 md:px-12">
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center max-w-3xl mx-auto">
               {[
-                { value: 50, suffix: "+", label: "Businesses Grown" },
                 { value: 100, suffix: "%", label: "Client Satisfaction" },
                 { value: 5, prefix: "₹", suffix: "K", label: "Starting from (website)" },
                 { value: 24, suffix: "/7", label: "Automation Coverage" },
