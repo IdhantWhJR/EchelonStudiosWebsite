@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "vd-KSOOjNbTqBtr_WcEdy"
+uri = "file://artifacts/echelon-studios/src/assets/hero-texture.png"
+type = "image"
+title = "Abstract black and yellow geometric texture"

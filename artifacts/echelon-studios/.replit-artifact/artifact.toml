@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Echelon Studios"
+version = "1.0.0"
+id = "artifacts/echelon-studios"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19194
+
+[services.development]
+run = "pnpm --filter @workspace/echelon-studios run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/echelon-studios", "run", "build" ]
+publicDir = "artifacts/echelon-studios/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19194"
+BASE_PATH = "/"
